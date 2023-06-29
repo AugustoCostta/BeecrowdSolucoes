@@ -1,0 +1,21 @@
+/*
+PROBLEMA 1019 EM C
+AUGUSTO DA COSTA
+2023-06-27
+*/
+#include <stdio.h>
+
+int main() {
+    int N, HORAS, MINUTOS, SEGUNDOS;
+
+    scanf("%d", &N);
+
+    HORAS = N / 3600;     // Extrai as horas completas
+    N = N % 3600;         // Atualiza N para o restante dos segundos
+    MINUTOS = N / 60;     // Extrai os minutos completos
+    SEGUNDOS = N % 60;     // Extrai os segundos restantes
+
+    printf("%d:%d:%d\n", HORAS, MINUTOS, SEGUNDOS);
+
+    return 0;
+}
