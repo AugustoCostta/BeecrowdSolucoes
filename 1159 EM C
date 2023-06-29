@@ -1,0 +1,32 @@
+/*
+1159 EM C
+AUGUSTO DA COSTA
+2023-06-27
+*/
+
+#include <stdio.h>
+
+int main() {
+  int X;
+  int soma;
+
+  while (1) {
+    scanf("%d", &X);
+
+    if (X == 0)
+      break;
+
+    if (X % 2 != 0)
+      X++;
+
+    soma = X;
+    soma += X + 2;
+    soma += X + 4;
+    soma += X + 6;
+    soma += X + 8;
+
+    printf("%d\n", soma);
+  }
+
+  return 0;
+}
