@@ -1,0 +1,14 @@
+'''
+Exercicio 1564 em Python 
+Augusto da costa 
+2023-06-11
+'''
+while True:
+ try:
+  n=int(input())
+  if n!=0:
+   print('vai ter duas!')
+  else:
+   print('vai ter copa!')
+ except EOFError:
+  break
