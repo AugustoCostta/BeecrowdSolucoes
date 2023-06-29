@@ -1,0 +1,17 @@
+'''
+EXERCICIO 1175 BEECROWD
+AUGUSTO DA COSTA 
+2023-26-06
+'''
+# Lê os 20 valores inteiros
+numeros = []
+for i in range(20):
+    numero = int(input())
+    numeros.append(numero)
+
+# Inverte a ordem dos elementos na lista
+numeros.reverse()
+
+# Imprime os valores invertidos
+for i in range(20):
+    print(f"N[{i}] = {numeros[i]}")
