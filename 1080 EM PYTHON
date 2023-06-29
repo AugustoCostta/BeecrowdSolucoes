@@ -1,0 +1,18 @@
+'''
+EXERCICIO 1180 BEECROWD
+AUGUSTO DA COSTA 
+2023-26-06
+'''
+# Lê o número de elementos
+N = int(input())
+
+# Lê os elementos separados por espaço e armazena em uma lista
+elementos = list(map(int, input().split()))
+
+# Encontra o menor valor e sua posição
+menor_valor = min(elementos)
+posicao = elementos.index(menor_valor)
+
+# Imprime o menor valor e sua posição
+print("Menor valor:", menor_valor)
+print("Posicao:", posicao)
