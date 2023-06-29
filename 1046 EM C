@@ -1,0 +1,28 @@
+/*
+PROBLEMA 1046 EM C
+AUGUSTO DA COSTA PEREIRA
+2023-06-27
+*/
+#include <stdio.h>
+
+int main() {
+    int N, X;
+    int dentro = 0, fora = 0;
+
+    scanf("%d", &N);
+
+    int i;
+    for (i = 0; i < N; i++) {
+        scanf("%d", &X);
+        if (X >= 10 && X <= 20) {
+            dentro++;
+        } else {
+            fora++;
+        }
+    }
+
+    printf("%d in\n", dentro);
+    printf("%d out\n", fora);
+
+    return 0;
+}
