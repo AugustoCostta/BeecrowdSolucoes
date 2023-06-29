@@ -1,0 +1,25 @@
+/*
+PROBLEMA 1142 EM C
+AUGUSTO DA COSTA
+2023-06-27
+*/
+#include <stdio.h>
+
+int main() {
+    int N;
+    int linha = 1;
+    int i, j;
+
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("%d ", linha);
+            linha++;
+        }
+        printf("PUM\n");
+        linha++;
+    }
+
+    return 0;
+}
