@@ -1,0 +1,27 @@
+'''
+EXERCICIO 1176 BEECROWD
+AUGUSTO DA COSTA 
+2023-26-06
+'''
+# Função para calcular o N-ésimo termo da sequência de Fibonacci
+def fibonacci(n):
+    fib = [0, 1]  # Inicializa a lista com os dois primeiros termos da sequência
+
+    for i in range(2, n+1):
+        fib.append(fib[i-1] + fib[i-2])
+
+    return fib[n]
+
+# Lê o número de casos de teste
+T = int(input())
+
+# Processa cada caso de teste
+for _ in range(T):
+    # Lê o valor de N
+    N = int(input())
+
+    # Calcula o N-ésimo termo da sequência de Fibonacci
+    resultado = fibonacci(N)
+
+    # Imprime o resultado
+    print("Fib({}) = {}".format(N, resultado))
