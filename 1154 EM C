@@ -1,0 +1,29 @@
+/*
+1154 EM C
+AUGUSTO DA COSTA
+2023-06-27
+*/
+
+#include <stdio.h>
+
+int main() {
+  int idade;
+  int soma = 0;
+  int contador = 0;
+
+  while (1) {
+    scanf("%d", &idade);
+
+    if (idade < 0)
+      break;
+
+    soma += idade;
+    contador++;
+  }
+
+  double media = (double)soma / contador;
+
+  printf("%.2lf\n", media);
+
+  return 0;
+}
