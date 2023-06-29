@@ -1,0 +1,49 @@
+/*
+PROBLEMA 1021 EM C
+AUGUSTO DA COSTA
+2023-06-27
+*/
+
+#include <stdio.h>
+
+int main() {
+    double N;
+    int notas[6] = {100, 50, 20, 10, 5, 2};
+    int moedas[6] = {100, 50, 25, 10, 5, 1};
+    int quantidade_notas[6] = {0};
+    int quantidade_moedas[6] = {0};
+
+    scanf("%lf", &N);
+
+    // Decomposição em notas
+    int valor = (int) N;
+    int i;
+    for (i = 0; i < 6; i++) {
+        quantidade_notas[i] = valor / notas[i];
+        valor %= notas[i];
+    }
+
+    // Decomposição em moedas
+    int centavos = (int) ((N - (int) N) * 100);
+    for (i = 0; i < 6; i++) {
+        quantidade_moedas[i] = centavos / moedas[i];
+        centavos %= moedas[i];
+    }
+
+    // Impressão dos resultados
+    printf("NOTAS:\n");
+    for (i = 0; i < 6; i++) {
+        printf("%d nota(s) de R$ %d.00\n", quantidade_notas[i], notas[i]);
+    }
+
+    printf("MOEDAS:\n");
+    for (i = 0; i < 6; i++) {
+        if (moedas[i] >= 100) {
+            printf("%d moeda(s) de R$ %.2lf\n", quantidade_moedas[i], moedas[i] / 100.0);
+        } else {
+            printf("%d moeda(s) de R$ 0.%.2d\n", quantidade_moedas[i], moedas[i]);
+        }
+    }
+
+    return 0;
+}
