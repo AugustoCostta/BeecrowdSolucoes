@@ -1,0 +1,16 @@
+'''
+1173 EM PYTHON
+AUGUSTO DA COSTA
+'''
+X = []
+for i in range(10):
+    if i == 0:
+        valor = int(input())
+        a = valor
+        X.insert(i,valor)
+    else:
+        a = a * 2
+        X.insert(i,a)
+
+for i in range(10):
+    print('N[{0}] = {1}'.format(i,X[i]))
