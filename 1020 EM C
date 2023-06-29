@@ -1,0 +1,23 @@
+/*
+PROBLEMA 1020 EM C
+AUGUSTO DA COSTA
+2023-06-27
+*/
+#include <stdio.h>
+
+int main() {
+    int N, ANOS, MESES, DIAS;
+
+    scanf("%d", &N);
+
+    ANOS = N / 365;     // Extrai os anos completos
+    N = N % 365;         // Atualiza N para o restante dos dias
+    MESES = N / 30;     // Extrai os meses completos
+    DIAS = N % 30;       // Extrai os dias restantes
+
+    printf("%d ano(s)\n", ANOS);
+    printf("%d mes(es)\n", MESES);
+    printf("%d dia(s)\n", DIAS);
+
+    return 0;
+}
