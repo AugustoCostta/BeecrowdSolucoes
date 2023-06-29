@@ -1,0 +1,19 @@
+'''
+PROBLEMA 1172 BEECROWD 
+AUGUSTO DA COSTA
+2023-06-26
+'''
+# Lê os 10 números inteiros
+numeros = []
+for i in range(10):
+    numero = int(input())
+    numeros.append(numero)
+
+# Substitui os números menores ou iguais a zero por 1
+for i in range(10):
+    if numeros[i] <= 0:
+        numeros[i] = 1
+
+# Imprime os resultados
+for i in range(10):
+    print(f"X[{i}] = {numeros[i]}")
