@@ -1,0 +1,22 @@
+/*
+1144 EM C
+AUGUSTO DA COSTA
+2023-06-27
+*/
+
+#include <stdio.h>
+
+int main() {
+    int N;
+    int linha = 1;
+    int i;
+
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++) {
+        printf("%d %d %d PUM\n", linha, linha + 1, linha + 2);
+        linha += 4;
+    }
+
+    return 0;
+}
