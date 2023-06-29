@@ -1,0 +1,22 @@
+/*
+PROBLEMA 1046 EM C
+AUGUSTO DA COSTA PEREIRA
+2023-06-27
+*/
+#include <stdio.h>
+
+int main() {
+    int inicio, fim, duracao;
+
+    scanf("%d %d", &inicio, &fim);
+
+    if (fim > inicio) {
+        duracao = fim - inicio;
+    } else {
+        duracao = 24 - inicio + fim;
+    }
+
+    printf("O JOGO DUROU %d HORA(S)\n", duracao);
+
+    return 0;
+}
