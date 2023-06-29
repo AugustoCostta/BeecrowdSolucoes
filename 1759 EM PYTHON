@@ -1,0 +1,10 @@
+'''
+Exercicio 1759 em Python
+Augusto da costa 
+2023-06-11
+'''
+
+N = int(input())
+
+print(' '.join(['Ho' for i in range(N-1)]), end=' ')
+print('Ho!')
