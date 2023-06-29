@@ -1,0 +1,13 @@
+'''
+Exercicio 1174 
+Augusto da costa 
+2023-06-12
+'''
+
+vet=[]
+for i in range(100):
+  vet.append(float(input()))
+
+for index, v in enumerate(vet):
+  if(v<=10):
+    print(f'A[{index}] = {v}')
