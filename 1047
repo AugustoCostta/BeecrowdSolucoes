@@ -1,0 +1,32 @@
+/*
+PROBLEMA 1047 EM C
+AUGUSTO DA COSTA PEREIRA
+PROF BERSSA
+2023-06-27
+*/
+
+#include <stdio.h>
+
+int main() {
+    int hora_inicio, minuto_inicio, hora_fim, minuto_fim;
+    int duracao_horas, duracao_minutos;
+
+    scanf("%d %d %d %d", &hora_inicio, &minuto_inicio, &hora_fim, &minuto_fim);
+
+    int inicio_minutos = hora_inicio * 60 + minuto_inicio;
+    int fim_minutos = hora_fim * 60 + minuto_fim;
+
+    int duracao_total_minutos;
+    if (inicio_minutos < fim_minutos) {
+        duracao_total_minutos = fim_minutos - inicio_minutos;
+    } else {
+        duracao_total_minutos = (24 * 60 - inicio_minutos) + fim_minutos;
+    }
+
+    duracao_horas = duracao_total_minutos / 60;
+    duracao_minutos = duracao_total_minutos % 60;
+
+    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", duracao_horas, duracao_minutos);
+
+    return 0;
+}
