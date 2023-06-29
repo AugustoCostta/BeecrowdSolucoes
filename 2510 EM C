@@ -1,0 +1,23 @@
+/*2510 EM  C
+AUGUSTO DA COSTA
+*/
+#include <stdio.h>
+
+int main ()
+{
+
+	unsigned short qtsBandidos;
+	unsigned short i;
+	char bandido[100];
+
+	scanf("%hu", &qtsBandidos);
+
+	for (i = 0; i < qtsBandidos; i++)
+	{
+
+		scanf(" %[^\n]", bandido);
+		printf("Y\n");
+
+	}
+
+}
